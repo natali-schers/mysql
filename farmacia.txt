@@ -1,0 +1,39 @@
+CREATE TABLE caixa (
+codAtendente int PRIMARY KEY auto_increment,
+nome varchar(100) not null,
+telfixo varchar(15) null,
+telcel varchar(15) not null,
+cpf varchar(15) unique not null,
+salario decimal(7,2) not null,
+rg varchar(15) unique not null,
+email varchar(40) unique not null
+);
+
+CREATE TABLE produto_remedio (
+codProduto int PRIMARY KEY auto_increment,
+nome varchar(100),
+qtde int,
+generico bit,
+fabricante varchar(100),
+preco decimal(7,2)
+);
+
+CREATE TABLE compra_venda (
+codCompra_Venda int PRIMARY KEY,
+hora time,
+data date,
+cpf varschar(15) unique,
+total decimal(7,2),
+codAtendente int,
+FOREIGN KEY(codAtendente) REFERENCES caixa (codAtendente)
+);
+
+CREATE TABLE itens_compra (
+codCompra_Venda int,
+codProduto int,
+qtde int,
+totalUnit decimal(7,2),
+FOREIGN KEY(codCompra_Venda) REFERENCES compra_venda (codCompra_Venda),
+FOREIGN KEY(codProduto) REFERENCES produto_remedio (codProduto)
+);
+
