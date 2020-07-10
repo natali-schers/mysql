@@ -1,0 +1,86 @@
+INSERT INTO caixa(nome, email, telcel, salario, cpf, rg) VALUES
+('Pedro Henrique','pedrohenrique@gmail.com','98104-9392','950.50','876.437.321-11','98.736.2534-5'),
+('Marcos Ribeiro','ribeiromarcos@gmail.com','98437-2636','950.50','373.645.352-42','36.535.4727-4'),
+('Bianca Novaz','biancanovaz@gmail,com','98475-6473','1075.00','837.462.524-32','37.362.5272-8');
+
+INSERT INTO produto_remedio(nome, fabricante, generico, preco, qtde) VALUES
+('paracetamol','germed','1','10.00','15'),
+('dorflex','sanofi','0','13.00','30'),
+('dipirona','medley','1','7.70','22'),
+('buscopan','boehringer','0','12.00','39'),
+('dorilen','legrand','0','5.00','26'),
+('sabonete','nivea','0','1.90','40'),
+('shampoo','seda','0','10.90','15'),
+('condicionador','seda','0','12.00','24'),
+('desodorante','nivea','0','11,50','15'),
+('creme','dove','0','13.10','24');
+
+
+INSERT INTO compra_venda(codAtendente, cpf, data, hora, total) VALUES
+(1,'432.675.455-89','2020-06-14','12:09:53',13.8);
+INSERT INTO itens_compra(codCompra_Venda, codProduto, qtde, totalUnit)VALUES
+(1,6,2,3.8),
+(1,1,1,10.0);
+
+INSERT INTO compra_venda(codAtendente, cpf, data, hora, total) VALUES
+(2,'384.838.983-22','2020-06-12','15:56:00',34.6);
+INSERT INTO itens_compra(codCompra_Venda, codProduto, qtde, totalUnit)VALUES
+(2,10,1,13.1),
+(2,9,1,11.5),
+(2,6,2,10.0);
+
+INSERT INTO compra_venda(codAtendente, cpf, data, hora, total) VALUES
+(2,'640.343.643.-09','2020-06-18','18:09:44',22.9);
+INSERT INTO itens_compra(codCompra_Venda, codProduto, qtde, totalUnit)VALUES
+(3,8,1,10.9),
+(3,9,1,12.0);
+
+INSERT INTO compra_venda(codAtendente, cpf, data, hora, total) VALUES
+(1,'873.928.293-20','2020-06-16','17:09:46',29.9);
+INSERT INTO itens_compra(codCompra_Venda, codProduto, qtde, totalUnit)VALUES
+(4,5,1,5.0),
+(4,6,1,1.9),
+(4,9,2,23.0);
+
+INSERT INTO compra_venda(codAtendente, cpf, data, hora, total) VALUES
+(2,'764.293.272-11','2020-06-13','11:12:33',40.9);
+INSERT INTO itens_compra(codCompra_Venda, codProduto, qtde, totalUnit)VALUES
+(5,8,1,12.0),
+(5,4,1,12.0),
+(5,1,1,10.0),
+(5,7,1,10.9);
+
+INSERT INTO compra_venda(codAtendente, cpf, data, hora, total) VALUES
+(3,'299.283.178-94','2020-06-08','14:03:00',17.3);
+INSERT INTO itens_compra(codCompra_Venda, codProduto, qtde, totalUnit)VALUES
+(6,3,2,15.4),
+(6,6,1,1.9);
+
+INSERT INTO compra_venda(codAtendente, cpf, data, hora, total) VALUES
+(1,'653.924.294-74','2020-06-11','11:32:09',26.2);
+INSERT INTO itens_compra(codCompra_Venda, codProduto, qtde, totalUnit)VALUES
+(7,10,2,26.2);
+
+
+INSERT INTO compra_venda(codAtendente, cpf, data, hora, total) VALUES
+(3,'847.939.223-44','2020-06-09','13:09:00',45.5);
+INSERT INTO itens_compra(codCompra_Venda, codProduto, qtde, totalUnit)VALUES
+(8,4,1,12.0),
+(8,5,2,10.0),
+(8,9,1,11.5),
+(8,10,1,12.0);
+
+INSERT INTO compra_venda(codAtendente, cpf, data, hora, total) VALUES
+(2,'334.343.652-78','2020-06-12','12:32:00','26.9',);
+INSERT INTO itens_compra(codCompra_Venda, codProduto, qtde, totalUnit)VALUES
+(9,3,2,15.4),
+(9,9,1,11.5);
+
+INSERT INTO compra_venda(codAtendente, cpf, data, hora, total) VALUES
+(3,'494.843.543-99','2020-06-12','18:54:22',63.1);
+INSERT INTO itens_compra(codCompra_Venda, codProduto, qtde, totalUnit)VALUES
+(10,10,1,13.1),
+(10,4,2,24.0),
+(10,2,2,26.0);
+
+
