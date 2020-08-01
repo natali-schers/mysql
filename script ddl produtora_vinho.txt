@@ -1,0 +1,36 @@
+create database produtora_vinho;
+
+use produtora_vinho;
+
+create table regiao(
+idRegiao int primary key auto_increment,
+descriregiao varchar(50) not null);
+
+create table produtor(
+idProdutor int primary key auto_increment,
+nomeProdutor varchar(50),
+moradaProdutor varchar(50),
+telefone varchar(15),
+email varchar(50) unique,
+idregiao int,
+foreign key(idRegiao) references regiao(idRegiao));
+
+ create table vinho(
+idVinho int primary key auto_increment,
+nomeVinho varchar(35),
+ano_vinho int,
+cor varchar(15),
+grau decimal(7,2),
+preco decimal(7,2),
+idprodutor int,
+foreign key (idProdutor) references produtor(idProdutor));
+
+ create table casta(
+idCasta int primary key auto_increment,
+casta varchar(50));
+
+ create table casta_vinho(
+idVinho int,
+idCasta int,
+foreign key (idVinho) references vinho(idVinho),
+foreign key (idCasta) references casta(idCasta));
