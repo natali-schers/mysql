@@ -15,7 +15,7 @@ email varchar(50) unique,
 idregiao int,
 foreign key(idRegiao) references regiao(idRegiao));
 
- create table vinho(
+create table vinho(
 idVinho int primary key auto_increment,
 nomeVinho varchar(35),
 ano_vinho int,
@@ -25,11 +25,11 @@ preco decimal(7,2),
 idprodutor int,
 foreign key (idProdutor) references produtor(idProdutor));
 
- create table casta(
+create table casta(
 idCasta int primary key auto_increment,
 casta varchar(50));
 
- create table casta_vinho(
+create table casta_vinho(
 idVinho int,
 idCasta int,
 foreign key (idVinho) references vinho(idVinho),
