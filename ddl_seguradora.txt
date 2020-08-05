@@ -1,0 +1,56 @@
+create database seguradora;
+
+use seguradora;
+
+create table cliente(
+idCliente int primary key auto_increment,
+nome varchar(200),
+telefone varchar(20),
+email varchar(100),
+dataNasc date,
+cpf varchar(40),
+rg varchar(40),
+rua varchar(100),
+num varchar(50),
+complemento varchar(100),
+bairro varchar(100),
+cidade varchar(100),
+estado varchar(100),
+cep varchar(40)
+);
+
+create table carro(
+idCarro int primary key auto_increment,
+marca varchar(100),
+modelo varchar(100),
+porte varchar(100),
+cor varchar(100),
+ano int,
+idCliente int,
+FOREIGN KEY(idCliente) REFERENCES cliente(idCliente)
+);
+
+create table tipo(
+idTipo int primary key auto_increment,
+tipo varchar(100)
+);
+
+create table ocorrencia(
+idOcorrencia int primary key auto_increment,
+idTipo int,
+idCarro int,
+rua varchar(100),
+cidade varchar(100),
+hora time,
+descricao varchar(100),
+data date,
+bairro varchar(100),
+FOREIGN KEY(idCarro) REFERENCES carro(idCarro),
+FOREIGN KEY(idTipo) REFERENCES tipo(idTipo)
+);
+
+
+
+
+
+
