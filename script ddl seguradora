@@ -10,12 +10,6 @@ email varchar(100),
 dataNasc date,
 cpf varchar(40),
 rg varchar(40),
-rua varchar(100),
-num varchar(50),
-complemento varchar(100),
-bairro varchar(100),
-cidade varchar(100),
-estado varchar(100),
 cep varchar(40)
 );
 
