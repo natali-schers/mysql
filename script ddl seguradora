@@ -42,9 +42,3 @@ bairro varchar(100),
 FOREIGN KEY(idCarro) REFERENCES carro(idCarro),
 FOREIGN KEY(idTipo) REFERENCES tipo(idTipo)
 );
-
-
-
-
-
-
