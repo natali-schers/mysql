@@ -45,4 +45,3 @@ FOREIGN KEY(codFuncionario) REFERENCES bibliotecario (codFuncionario),
 FOREIGN KEY(ra) REFERENCES aluno (ra),
 FOREIGN KEY(codLivro) REFERENCES livro (codLivro)
 );
-
