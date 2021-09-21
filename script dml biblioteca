@@ -25,10 +25,10 @@ INSERT INTO aluno (nome, email, telefone, turma, dataNascimento) VALUES
 ('Pietro Daniel','pietrodaniel@gmail.com','9263-29384','2B','2004-07-04');
 
 
-INSERT INTO bibliotecario (nome, rg, email, cpf, uf, telefone, cep, bairro, num, dataNascimento) VALUES
-('Adriana Luz','12393787-8','adrianaalmeida@gmail.com','456.989.321-45','SP','9876-92865','09371190','Jadim Belo','405','1989-12-25'),
-('Roger Silva','54347651-9','silvaroger@gmail.com','483.847.928-90','SP','9385-76823','48399723','São Vicente','670','1990-03-22'),
-('Amanda Gallo','75613283-7','amandagallo@hotl.com','859.948.474-31','SP','9650-46434','15274845','Santo Alvez','359','1979-05-30');
+INSERT INTO bibliotecario (nome, rg, email, cpf, rua, uf, telefone, cep, bairro, num, dataNascimento) VALUES
+('Adriana Luz','12393787-8','adrianaalmeida@gmail.com','456.989.321-45','Pedro Ruiz','SP','9876-92865','09371190','Jadim Belo','405','1989-12-25'),
+('Roger Silva','54347651-9','silvaroger@gmail.com','483.847.928-90','Maria Florida','SP','9385-76823','48399723','São Vicente','670','1990-03-22'),
+('Amanda Gallo','75613283-7','amandagallo@hotl.com','859.948.474-31','Ribeiros','SP','9650-46434','15274845','Santo Alvez','359','1979-05-30');
 
 INSERT INTO emprestimo_devolucao (codFuncionario, codLivro, ra, data_emprestimo, data_devolucao) VALUES
 (2,1,1,'2020-04-09','2020-05-09'),
