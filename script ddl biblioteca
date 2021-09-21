@@ -13,6 +13,7 @@ uf varchar(2),
 cep varchar(255),
 bairro varchar(255),
 num int,
+rua varchar(255),
 telefone varchar(20)
 );
 
