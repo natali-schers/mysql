@@ -3,7 +3,7 @@ INSERT INTO livro (titulo, autor, editora, genero) VALUES
 ('O Morro dos Ventos Uivantes','Emiy Brontë','Zahar','Romance'),
 ('A Culpa é das Estrelas','John Green','Intrinseca','Romance'),
 ('O Menino da Lista de Schindler','Leon Leyson','Rocco','Autobiografia'),
-('O Menino de Pijama Listrado','John Boyne','David Fickling Books','Ficção Histórica');
+('O Menino de Pijama Listrado','John Boyne','David Fickling Books','Ficção Histórica'),
 ('Dom Quixote','Miguel de Cervantes','Ática','Aventura'),
 ('Eu Sou Malala','Malala','Little','Autobiografia'),
 ('A Caçadora de Dragões','Kristen Ciccareli','Seguinte','Aventura'),
