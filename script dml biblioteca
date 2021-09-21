@@ -21,7 +21,7 @@ INSERT INTO aluno (nome, email, telefone, turma, dataNascimento) VALUES
 ('Leonardo Ferreira','leoferreira@gmail.com','9625-29384','1B','2005-06-12'),
 ('Mariana Gonçalves','marianagonçalves@hotmail.com','9374-32447','3D','2003-11-06'),
 ('Priscila Amaral','amaralpriscila@gmail.com','9729-29380','2A','2004-09-09'),
-('Fernanda Regina','fernandaregina@gmail.com',9028-38372'','1A','2005-11-03'),
+('Fernanda Regina','fernandaregina@gmail.com','9028-38372','1A','2005-11-03'),
 ('Pietro Daniel','pietrodaniel@gmail.com','9263-29384','2B','2004-07-04');
 
 
